@@ -1,0 +1,16 @@
+def calculate_average(numbers):
+    if not numbers:
+        return None
+
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+# Example usage
+number_list = [2, 4, 6, 8, 10]
+result = calculate_average(number_list)
+
+if result is not None:
+    print("The average is:", result)
+else:
+    print("The list is empty, cannot calculate average.")
